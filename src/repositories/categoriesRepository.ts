@@ -25,4 +25,8 @@ export default class CategoriesRepository {
     Object.assign(category, objectSource)
     this.categories.push(category)
   }
+
+  list (): Category[] {
+    return this.categories
+  }
 }
