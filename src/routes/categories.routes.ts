@@ -10,7 +10,7 @@ categoriesRoutes.post('/', (request, response) => {
   const categoryAlreadyExist = categoriesRepository.findByName(name)
 
   if (categoryAlreadyExist) {
-    return response.status(401).json({ error: 'User already exist' })
+    return response.status(401).json({ error: 'Category already exists!' })
   }
 
   categoriesRepository.create({ name, description })
