@@ -29,4 +29,9 @@ export default class CategoriesRepository {
   list (): Category[] {
     return this.categories
   }
+
+  findByName (name: string): Category {
+    const category = this.categories.find(arrayElement => arrayElement.name === name)
+    return category
+  }
 }
