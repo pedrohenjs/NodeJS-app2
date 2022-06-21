@@ -11,7 +11,7 @@ categoriesRoutes.post('/', (request, response) => {
 
   createCategoryService.execute({ name, description })
 
-  return response.status(201).send()
+  return response.status(201).json({ message: 'Category created!' })
 })
 
 categoriesRoutes.get('/', (request, response) => {
