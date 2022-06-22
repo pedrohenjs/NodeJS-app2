@@ -35,3 +35,4 @@ export default class CategoriesRepository {
     return category
   }
 }
+// repository is where we gonna write the functions and possibilities of some thing
