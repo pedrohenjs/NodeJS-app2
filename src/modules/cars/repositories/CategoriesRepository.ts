@@ -16,13 +16,11 @@ export default class CategoriesRepository {
   create ({ name, description }: ICreateCategoryDTO) {
     const category: Category = new Category()
 
-    const objectSource: Category = {
+    Object.assign(category, {
       name,
       description,
       created_at: new Date()
-    }
-
-    Object.assign(category, objectSource)
+    })
     this.categories.push(category)
   }
 
