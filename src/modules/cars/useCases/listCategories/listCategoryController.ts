@@ -3,7 +3,7 @@ import { Request, Response } from 'express'
 import { ListCategoriesUseCase } from './listCategoriesUseCase'
 
 class ListCategoriesController {
-  private listCategoriesUseCase
+  private listCategoriesUseCase: ListCategoriesUseCase
   constructor (listCategoriesUseCase: ListCategoriesUseCase) {
     this.listCategoriesUseCase = listCategoriesUseCase
   }
